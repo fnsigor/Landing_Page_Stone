@@ -67,9 +67,6 @@ body > section:not(body > section:nth-child(2)) img:not(#conta .section-content 
     background-color: var(--white-secondary);
 }
 
-.section-content{
-    min-width: 37rem;
-}
 
 .section-content h5{
     font-weight: 700;
@@ -335,6 +332,9 @@ footer section:last-child ul{
 
 
 @media(max-width: 1040px){
+
+    /*============= GERAL ===================*/
+    
     
     /*sections com background branco*/
     body > section:not(body > section:nth-child(2)){
@@ -381,13 +381,9 @@ footer section:last-child ul{
         text-align: center;
     }
 
-    body > section{
-        width: 100%;
-    }
 
-    body > section *{
-        max-width: 100%;
-    }
+    /*============= HEADER ===================*/
+
 
     header{
         padding: 1.4rem 2.4rem;
@@ -402,8 +398,12 @@ footer section:last-child ul{
         text-align: center;
         font-size: 1.4rem;
         line-height: 1.6rem;
-        padding: 1rem 1.8rem;
+        padding: 1rem 1.4rem;
     }
+
+
+    /*============= MAIN CONTENT ===================*/
+
 
     #main{
         padding-inline: 1.8rem;
@@ -449,10 +449,17 @@ footer section:last-child ul{
         font-size: 3.2rem;
         line-height: 4rem;
     }
+    .secondary-white{
+        padding-inline: 1rem;
+    }
 
     .secondary-white .bt{
-        padding: 1.3rem 3.3rem;
+        display: flex;
+        align-items: center;
     }
+
+
+    /*============= FOOTER ===================*/
 
 
     footer section:first-child{
